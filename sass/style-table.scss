@@ -1,0 +1,108 @@
+@import "style.css";
+@import "fonts.scss";
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+ header{
+		background-image: url(../img/table/header-img.jpg) ;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 695px;
+		text-align: center;
+	}
+.enter-block{
+}
+.enter-block {
+		padding-top: 46px ;
+		width: 87% ;
+		margin: 0 auto ;
+}
+.enter-block__list{
+	float: right;
+}
+.enter-block__titel{
+		float: left;
+	}
+.center-block{
+	clear: both;
+	padding-top: 138px;
+	width: 77%;
+	margin: 0 auto;
+	line-height: 60px;
+}
+.center-block__midel-title{
+		font-size: 52px;
+		margin-bottom: 15px;
+	}
+.center-block__footer-title{
+		font-size: 24px;
+		padding-bottom: 10px;
+	
+	}
+.center-block__link{
+		font-size: 14px;
+		width: 38%;
+		height: 45px;
+		padding-top: -3px;
+	}
+.second-block{
+	width: 98%;
+	margin: 100px auto;
+}
+.second-block__wrap{
+	display: inline-flex;
+	padding-top: 36px;
+}
+.step{;
+		display: block;;
+		margin-bottom: 20px;;
+		width: 47px;;
+		margin-top: 213px;
+		padding: {
+			top: 5px;
+			bottom: 5px;
+			left: 16px;
+			right: 7px;
+		};
+		border-radius: 10px;;
+		padding-top: 5px;;
+		padding-bottom: 5px;
+		padding-left: 17px;
+	}
+.step-central{
+	margin-top: 260px;
+}
+.first-step{
+	height: 400px;
+	width: 33%;
+	padding-left: 21px;
+}
+.first-step__title{
+	padding-bottom: 20px;
+}
+.second-step__title{
+	@extend .first-step__title;
+}
+.third-step__title{
+	@extend .first-step__title;
+}
+.second-step{
+		@extend .first-step;
+		background-image: url(../img/320/step-2.jpg);
+		margin-left: 10px;
+		margin-right: 10px;
+
+}
+.third-step{
+		@extend .first-step;
+		background-image: url(../img/320/step-3.jpg);
+}
+.partners-block{
+	width: 70%;
+}
+.partners-block__title{
+	padding-bottom: 20px;
+}
+.partner-info{
+	display: inline-grid;
+}
+}
