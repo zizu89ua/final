@@ -18,9 +18,7 @@ $(function(){
 	    
 			});
 	};
-		    
-		   
-
+		    	  
 load();
 
 	function clickFun(){

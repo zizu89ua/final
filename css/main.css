@@ -24,13 +24,13 @@ a {
 
 .grid-block {
   padding: 5px;
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
-  height: 945px;
+  height: 1070px;
 }
 
 .grid__box:nth-child(6) {
-  width: 61%;
+  width: 64%;
 }
 
 .grid__box:nth-child(6) .grid__item {
@@ -38,7 +38,7 @@ a {
 }
 
 .grid__box:nth-child(7) {
-  width: 61%;
+  width: 64%;
 }
 
 .grid__box:nth-child(7) .grid__item {
@@ -47,17 +47,18 @@ a {
 
 .grid__item {
   margin-bottom: 10px;
-  width: auto;
+  width: 100%;
   height: 100%;
   padding: 2px;
+  border-radius: 10px;
 }
 
 .grid__box {
   position: relative;
-  width: 30%;
-  height: 300px;
+  width: 31%;
+  height: 305px;
   float: left;
-  margin: 5px;
+  margin: 10px;
   overflow: hidden;
 }
 
@@ -115,6 +116,13 @@ header {
   border-radius: 30px;
   display: block;
   margin: 0 auto;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-family: Montserrat-Bold;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .second-block__title, .partners-block__title, .holiday-cattegory__title, .footer__company-block, .footer__partners-block {
@@ -216,6 +224,8 @@ header {
   color: #ff4e50;
   font-family: Montserrat-Bold;
   outline: none;
+  display: block;
+  margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 36px;
@@ -238,7 +248,6 @@ header {
 input::-webkit-input-placeholder {
   font-size: 14px;
   opacity: 0.5;
-  padding-left: 15px;
 }
 
 .holiday-cattegory__search-form {
@@ -252,6 +261,8 @@ input::-webkit-input-placeholder {
   font-family: Montserrat-Bold;
   text-align: center;
   margin-bottom: 10px;
+  border: 1px solid;
+  outline: none;
 }
 
 .holiday-cattegory__search-button {

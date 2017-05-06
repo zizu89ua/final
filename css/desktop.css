@@ -48,10 +48,7 @@
     padding-bottom: 10px;
   }
   .center-block__link {
-    font-size: 14px;
-    width: 38%;
     height: 45px;
-    padding-top: -3px;
   }
   .second-block {
     width: 98%;
@@ -81,7 +78,7 @@
   }
   .first-step, .second-step, .third-step {
     height: 400px;
-    width: 15%;
+    width: 20%;
     padding-left: 21px;
   }
   .first-step__title, .second-step__title, .third-step__title {
@@ -89,14 +86,20 @@
   }
   .second-step {
     background-image: url(../img/320/step-2.jpg);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .third-step {
     background-image: url(../img/320/step-3.jpg);
   }
+  .holiday-cattegory {
+    padding-bottom: 120px;
+  }
   .holiday-cattegory__title {
-    padding-bottom: 37px;
+    padding-bottom: 30px;
+  }
+  .holiday-cattegory__search-title {
+    margin-bottom: 40px;
   }
   .holiday-cattegory__search-form {
     padding-left: 35%;
@@ -104,14 +107,15 @@
   .holiday-cattegory__search-block {
     float: left;
     margin-right: 10px;
-    width: 200px;
+    width: 230px;
   }
   .holiday-cattegory__search-button {
     float: left;
-    width: 200px;
+    width: 160px;
   }
   .partners-block {
-    width: 70%;
+    padding-bottom: 70px;
+    width: 90%;
   }
   .partners-block__title {
     padding-bottom: 20px;
