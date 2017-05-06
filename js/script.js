@@ -1,6 +1,7 @@
 $(function(){
-	$('.grid').masonry({
-  		columnWidth: '.grid-item',
-  		itemSelector: '.grid-item'
+	$('.grid__box').masonry({
+	    itemSelector: '.grid__item',
+	    columnWidth: 300,
+	   
 	});
 });

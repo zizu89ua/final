@@ -22,11 +22,67 @@ a {
   color: #fff;
 }
 
+.grid-block {
+  padding: 5px;
+  width: 70%;
+  margin: 0 auto;
+  height: 945px;
+}
+
+.grid__box:nth-child(6) {
+  width: 61%;
+}
+
+.grid__box:nth-child(6) .grid__item {
+  width: 100%;
+}
+
+.grid__box:nth-child(7) {
+  width: 61%;
+}
+
+.grid__box:nth-child(7) .grid__item {
+  width: 100%;
+}
+
+.grid__item {
+  margin-bottom: 10px;
+  width: auto;
+  height: 100%;
+  padding: 2px;
+}
+
+.grid__box {
+  position: relative;
+  width: 30%;
+  height: 300px;
+  float: left;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.grid__text {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  left: 20%;
+  right: 20%;
+  font-size: 22px;
+  font-family: Montserrat-Bold;
+}
+
+.gutter-width {
+  width: 4%;
+}
+
 .wrap {
   margin: 0 auto;
 }
 
 header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
   font-family: Montserrat-Bold;
   color: #fff;
 }
@@ -54,14 +110,14 @@ header {
   font-family: Roboto-light;
 }
 
-.center-block__link {
+.center-block__link, .holiday-cattegory__search-button {
   background-color: #ff4e50;
   border-radius: 30px;
   display: block;
   margin: 0 auto;
 }
 
-.second-block__title, .partners-block__title {
+.second-block__title, .partners-block__title, .holiday-cattegory__title, .footer__company-block, .footer__partners-block {
   font-size: 22px;
   font-family: Montserrat-Regular;
   color: #333;
@@ -105,7 +161,7 @@ header {
   width: 85%;
 }
 
-.partners-block__title {
+.partners-block__title, .holiday-cattegory__title, .footer__company-block, .footer__partners-block {
   font-family: Montserrat-Bold;
 }
 
@@ -164,4 +220,93 @@ header {
   padding-bottom: 10px;
   padding-left: 36px;
   padding-right: 36px;
+}
+
+.holiday-cattegory {
+  padding-bottom: 38px;
+}
+
+.holiday-cattegory__search-title, input::-webkit-input-placeholder {
+  font-family: Roboto-light;
+  font-size: 18px;
+  color: #696969;
+  display: block;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  opacity: 0.5;
+  padding-left: 15px;
+}
+
+.holiday-cattegory__search-form {
+  text-align: center;
+}
+
+.holiday-cattegory__search-block {
+  height: 35px;
+  width: 300px;
+  font-size: 20px;
+  font-family: Montserrat-Bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.holiday-cattegory__search-button {
+  font-family: Montserrat-Bold;
+  text-align: center;
+  width: 300px;
+  border: none;
+  color: #fff;
+  outline: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  border-top: 4px solid #ff4e50;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer__title {
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  color: #ff4e50;
+  letter-spacing: 1px;
+  margin-bottom: 13px;
+}
+
+.footer__list {
+  text-align: left;
+}
+
+.footer__company-block, .footer__partners-block {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.footer__link {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer__link a {
+  color: #8f8f8f;
+}
+
+.designed-by__title {
+  display: block;
+  text-transform: uppercase;
+  color: #8f8f8f;
+  opacity: 0.5;
+  font-family: Montserrat-Bold;
+  font-size: 10px;
+  padding-bottom: 10px;
 }

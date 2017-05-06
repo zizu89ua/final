@@ -6,38 +6,37 @@ $(function(){
 
 	function load(){
 			
-			var URL = "https://pixabay.com/api/?key=5276352-5eeec9953d725415cb7dab763" + "&q="  + "&image_type=photo"  + "&page=" + randomPage() + "&per_page=7" ;
+			var URL = "https://pixabay.com/api/?key=5276352-5eeec9953d725415cb7dab763" + "&q="  + "&image_type=photo" + "&min_width=350" + + "&min_height=300" + "&page=" + randomPage() + "&per_page=7" ;
 			$.getJSON(URL, function(data){
-			
 		    if (parseInt(data.totalHits) > 0 )
-		        $.each(data.hits, function(i, hit){
-		        $("<div class='grid-box'></div>").appendTo("#grid");
-	        	$("<img class='grid__item'>").appendTo(".grid-box").attr("src", hit.webformatURL);
-		        		
-		        });
-		    else
-		        console.log('No hits');
+	        $.each(data.hits, function(i, hit){
+	        	var nom = $("<h4 class='grid__text'></h4>").append(hit.tags);
+	        
+	        	$("<div class='grid__box persent-size'></div>").appendTo(".grid-block").append("<img class='grid__item ' src=" + hit.webformatURL + ">").append(nom);
+	        	
+	        	});
+	    
 			});
-			
-		}
-	
+	};
+		    
+		   
+
 load();
 
 	function clickFun(){
-		$("img.grid__item").detach();
+		$(".grid__box").detach();
 		var search = $('.holiday-cattegory__search-block').val();
-
-		var URL = "https://pixabay.com/api/?key=5276352-5eeec9953d725415cb7dab763" + "&q=" + search + "&image_type=photo"  + "&per_page=7";
+		var URL = "https://pixabay.com/api/?key=5276352-5eeec9953d725415cb7dab763" + "&q=" + search + "&image_type=photo" + "&min_width=350" + "&min_height=300"  + "&page=" + randomPage() + "&per_page=7";
 		$.getJSON(URL, function(data){
 			
-	    if (parseInt(data.totalHits) > 0 )
+	   if (parseInt(data.totalHits) > 0 )
 	        $.each(data.hits, function(i, hit){
-	        	$("<div class='grid-box'></div>").appendTo("#grid");
-	        	$("<img class='grid__item'>").appendTo(".grid-box").attr("src", hit.webformatURL);
-	        		
+	        	var nom = $("<h4 class='grid__text'></h4>").append(hit.tags);
+	        
+	        	$("<div class='grid__box persent-size'></div>").appendTo(".grid-block").append("<img class='grid__item ' src=" + hit.webformatURL + ">").append(nom);
+	        	
 	        });
-	    else
-	        console.log('No hits');
+	    
 		});
 	};
 

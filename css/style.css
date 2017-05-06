@@ -16,10 +16,7 @@
 @media screen and (max-width: 767px) {
   header {
     background-image: url(../img/320/header-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 540px;
-    text-align: center;
   }
   .enter-block__list {
     padding-top: 7%;
@@ -102,61 +99,43 @@
     margin: 0 auto;
     padding-bottom: 38px;
   }
-  .holiday-cattegory__search-title, input::-webkit-input-placeholder {
-    font-family: Roboto-light;
-    font-size: 18px;
-    color: #696969;
-    display: block;
-    text-align: center;
-    margin-bottom: 17px;
-  }
   #grid {
     padding-bottom: 10px;
   }
-  .grid__item {
+  .grid-block {
+    height: 2200px;
+  }
+  .grid__box:nth-child(6) {
+    width: auto;
+  }
+  .grid__box:nth-child(7) {
+    width: auto;
+  }
+  .grid__box {
     width: 100%;
+  }
+  .grid__item {
+    width: auto;
     margin: 0 auto;
     border-radius: 5px;
   }
-  input::-webkit-input-placeholder {
-    font-size: 14px;
-    opacity: 0.5;
-    padding-left: 15px;
-  }
-  .holiday-cattegory__search-block {
-    height: 35px;
-    width: 100%;
-    font-size: 20px;
-    font-family: Montserrat-Bold;
-    text-align: center;
-    margin-bottom: 10px;
-  }
   footer {
-    border-top: 4px solid #ff4e50;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    display: block;
   }
-  .footer__title {
-    font-family: Montserrat-Bold;
-    font-size: 16px;
-    color: #ff4e50;
-    letter-spacing: 1px;
-    margin-bottom: 13px;
+  .footer__list {
+    text-align: center;
+  }
+  .footer__company-block, .footer__partners-block {
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .footer__partners-block {
+    margin-top: 15px;
   }
   .footer__link {
     display: inline-block;
   }
   .footer__link a {
     color: #8f8f8f;
-  }
-  .designed-by__title {
-    display: block;
-    text-transform: uppercase;
-    color: #8f8f8f;
-    opacity: 0.5;
-    font-family: Montserrat-Bold;
-    font-size: 10px;
-    padding-bottom: 10px;
   }
 }

@@ -1,22 +1,35 @@
-@import "style.css";
 @import "fonts.scss";
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+@media screen and (min-width: 1024px) {
+
+
  header{
-		background-image: url(../img/table/header-img.jpg) ;
+		background-image: url(../img/desktop/header-img.jpg) ;
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 695px;
 		text-align: center;
 	}
-
-
+.enter-block{
+	width: 65%;
+	margin: 0 auto;
+	padding-top: 48px;
+}
+.enter-block__list{
+		float: right;
+}
+.enter-block__titel{
+		float: left;
+}
 .center-block{
 	clear: both;
 	padding-top: 138px;
-	width: 77%;
+	width: 48%;
 	margin: 0 auto;
 	line-height: 60px;
+
 }
 .center-block__midel-title{
 		font-size: 52px;
@@ -40,6 +53,8 @@
 .second-block__wrap{
 	display: inline-flex;
 	padding-top: 36px;
+	justify-content: center;
+
 }
 .step{
 		display: block;;
@@ -62,7 +77,7 @@
 }
 .first-step{
 	height: 400px;
-	width: 33%;
+	width: 15%;
 	padding-left: 21px;
 }
 .first-step__title{
@@ -85,6 +100,21 @@
 		@extend .first-step;
 		background-image: url(../img/320/step-3.jpg);
 }
+.holiday-cattegory__title{
+	padding-bottom: 37px;
+}
+.holiday-cattegory__search-form{
+	padding-left: 35%;
+}
+.holiday-cattegory__search-block{
+	float: left;
+	margin-right: 10px;
+	width: 200px;
+}
+.holiday-cattegory__search-button{
+	float: left;
+	width: 200px;
+}
 .partners-block{
 	width: 70%;
 }
@@ -93,5 +123,21 @@
 }
 .partner-info{
 	display: inline-grid;
+	margin: {
+		top: 15px;
+		left: 10px;
+		right: 10px;
+	}
+}
+footer{
+	display: block;
+	margin-top: 20px;
+	justify-content: none;
+}
+.footer__wrap{
+	width: 70%;
+	margin: 0 auto;
+	display: inline-flex;
+    justify-content: space-around;
 }
 }
