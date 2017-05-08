@@ -4,4 +4,7 @@ $(function(){
 	    columnWidth: 300,
 	   
 	});
+	$('#button').myPlugin();
+
+	
 });

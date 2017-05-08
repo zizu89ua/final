@@ -77,6 +77,12 @@ header{
 		&:hover{
 			border: 2px solid #fff;
 			border-radius: 20px;
+			padding: {
+				top: 8px;
+				bottom: 8px;
+				left: 13px;
+				right: 13px;
+			}
 		}
 	}
 .enter-block__titel{
@@ -110,6 +116,17 @@ header{
 		color: #333;
 		text-align: center;
 	}
+
+.slider{
+	position: relative;
+}
+.slider-button-left{
+	position: absolute;
+	top: 100px;
+}
+.slider-button-right{
+	position:absolute
+}
 .first-step__title{
 		font-size: 24px;
 	
@@ -121,6 +138,7 @@ header{
 		font-family: $main-font;
 		color: #fff;
 		border-radius: 5px;
+		position: relative;
 	}
 .step{
 		text-transform: uppercase;
@@ -307,6 +325,7 @@ footer{
 	.footer__link{
 		display: block;
 		margin-bottom: 10px;
+		font-family: Roboto-light;
 		a{
 			color: #8f8f8f;
 

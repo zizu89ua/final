@@ -1,16 +1,22 @@
 @font-face {
+  font-family: Roboto-light;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(../fonts/roboto-light.ttf), url(../fonts/RobotoLight.woff2) format("woff2"), url(../fonts/RobotoLight.woff);
+}
+
+@font-face {
   font-family: Montserrat-Bold;
-  src: url(../fonts/Montserrat-Bold.ttf);
+  font-style: normal;
+  font-weight: bold;
+  src: local("Montserrat-Bold"), local("Montserrat-Bold"), url(../fonts/Montserrat-Bold.ttf), url(../fonts/Montserrat-Bold.woff2) format("woff2"), url(../fonts/Montserrat-Bold.woff);
 }
 
 @font-face {
   font-family: Montserrat-Regular;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-
-@font-face {
-  font-family: Roboto-light;
-  src: url(../fonts/roboto-light.ttf);
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat-Regular"), local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.woff2) format("woff2"), url(../fonts/Montserrat-Regular.woff);
 }
 
 body {
@@ -97,6 +103,10 @@ header {
 .enter-block__button:hover {
   border: 2px solid #fff;
   border-radius: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 .enter-block__titel {
@@ -132,6 +142,19 @@ header {
   text-align: center;
 }
 
+.slider {
+  position: relative;
+}
+
+.slider-button-left {
+  position: absolute;
+  top: 100px;
+}
+
+.slider-button-right {
+  position: absolute;
+}
+
 .first-step__title, .second-step__title, .third-step__title {
   font-size: 24px;
 }
@@ -143,6 +166,7 @@ header {
   font-family: Montserrat-Bold;
   color: #fff;
   border-radius: 5px;
+  position: relative;
 }
 
 .step {
@@ -306,6 +330,7 @@ footer {
 .footer__link {
   display: block;
   margin-bottom: 10px;
+  font-family: Roboto-light;
 }
 
 .footer__link a {

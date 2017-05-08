@@ -21,8 +21,9 @@ $(function(){
 		    	  
 load();
 
-	function clickFun(){
+	function clickFun(e){
 		$(".grid__box").detach();
+		e.preventDefault();
 		var search = $('.holiday-cattegory__search-block').val();
 		var URL = "https://pixabay.com/api/?key=5276352-5eeec9953d725415cb7dab763" + "&q=" + search + "&image_type=photo" + "&min_width=350" + "&min_height=300"  + "&page=" + randomPage() + "&per_page=7";
 		$.getJSON(URL, function(data){

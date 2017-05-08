@@ -10,7 +10,17 @@
 		text-align: center;
 	}
 
-
+.enter-block{
+	width: 65%;
+	margin: 0 auto;
+	padding-top: 48px;
+}
+.enter-block__list{
+		float: right;
+}
+.enter-block__titel{
+		float: left;
+}
 .center-block{
 	clear: both;
 	padding-top: 138px;
@@ -85,6 +95,20 @@
 		@extend .first-step;
 		background-image: url(../img/320/step-3.jpg);
 }
+.grid-block{
+	width: 75%;
+}
+.grid__box{
+	width: 29%;
+}
+.grid__box:nth-child(6){
+	width: 62%;
+	
+}
+.grid__box:nth-child(7){
+	width: 62%;
+	
+}
 .partners-block{
 	width: 50%;
 }
@@ -94,4 +118,16 @@
 .partner-info{
 	display: inline-grid;
 }
+footer{
+	display: block;
+	margin-top: 20px;
+	justify-content: none;
+}
+.footer__wrap{
+	width: 70%;
+	margin: 0 auto;
+	display: inline-flex;
+    justify-content: space-around;
+}
+
 }

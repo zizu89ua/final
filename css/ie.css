@@ -1,4 +1,6 @@
-@import url(style.css);
+
+
+/*
 @font-face {
   font-family: Roboto-light;
   font-style: normal;
@@ -10,7 +12,7 @@
   font-family: Montserrat-Bold;
   font-style: normal;
   font-weight: bold;
-  src: local("Montserrat-Bold"), local("Montserrat-Bold"), url(../fonts/Montserrat-Bold.ttf), url(../fonts/Montserrat-Bold.woff2) format("woff2"), url(../fonts/Montserrat-Bold.woff);
+  src: local("Montserrat-Bold"), local("Montserrat-Bold"), url(../fonts/Montserrat-Bold.ttf), url(../fonts/montserrat-bold.eot), url(../fonts/Montserrat-Bold.woff2) format("woff2"), url(../fonts/Montserrat-Bold.woff);
 }
 
 @font-face {
@@ -18,17 +20,32 @@
   font-style: normal;
   font-weight: normal;
   src: local("Montserrat-Regular"), local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.woff2) format("woff2"), url(../fonts/Montserrat-Regular.woff);
+}*/
+
+@font-face {
+  font-family: Roboto-light;
+  src:  url(../fonts/Roboto-Light.eot);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src:  url(../fonts/montserrat-regular.eot.eot);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src:  url(../fonts/montserrat-bold.eot);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  header {
-    background-image: url(../img/table/header-img.jpg);
+header{
+    background-image: url(../img/desktop/header-img.jpg) ;
+    /*behavior: url(../js/PIE.htc);*/
     background-size: cover;
     background-repeat: no-repeat;
     height: 695px;
+    font-family: Montserrat-Bold;
     text-align: center;
-  }
-  .enter-block {
+
+}
+ .enter-block {
     width: 65%;
     margin: 0 auto;
     padding-top: 48px;
@@ -39,10 +56,22 @@
   .enter-block__titel {
     float: left;
   }
+  .enter-block__button:hover {
+
+    border: 2px solid #fff;
+    border-radius: 20px;
+    behavior: url(pie/pie.htc);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+    
+    position: relative;
+}
   .center-block {
     clear: both;
     padding-top: 138px;
-    width: 77%;
+    width: 48%;
     margin: 0 auto;
     line-height: 60px;
   }
@@ -55,20 +84,19 @@
     padding-bottom: 10px;
   }
   .center-block__link {
-    font-size: 14px;
-    width: 38%;
     height: 45px;
-    padding-top: -3px;
+    border-radius: 20px;
+    behavior: url(pie/pie.htc);
+    position: relative;
   }
-  .second-block {
+   .second-block {
     width: 98%;
     margin: 100px auto;
   }
   .second-block__wrap {
-    display: inline-flex;
     padding-top: 36px;
   }
-  .step {
+    .step {
     display: block;
     margin-bottom: 20px;
     width: 47px;
@@ -81,56 +109,21 @@
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 17px;
+    behavior: url(pie/pie.htc);
+    position: relative;
   }
   .step-central {
     margin-top: 260px;
   }
   .first-step, .second-step, .third-step {
     height: 400px;
-    width: 33%;
+    width: 20%;
     padding-left: 21px;
+    float: left;
+    behavior: url(pie/pie.htc);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/320/step-1.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/320/step-1.jpg', sizingMethod='scale')";
   }
-  .first-step__title, .second-step__title, .third-step__title {
-    padding-bottom: 20px;
-  }
-  .second-step {
-    background-image: url(../img/320/step-2.jpg);
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .third-step {
-    background-image: url(../img/320/step-3.jpg);
-  }
-  .grid-block {
-    width: 75%;
-  }
-  .grid__box {
-    width: 29%;
-  }
-  .grid__box:nth-child(6) {
-    width: 62%;
-  }
-  .grid__box:nth-child(7) {
-    width: 62%;
-  }
-  .partners-block {
-    width: 50%;
-  }
-  .partners-block__title {
-    padding-bottom: 20px;
-  }
-  .partner-info {
-    display: inline-grid;
-  }
-  footer {
-    display: block;
-    margin-top: 20px;
-    justify-content: none;
-  }
-  .footer__wrap {
-    width: 70%;
-    margin: 0 auto;
-    display: inline-flex;
-    justify-content: space-around;
-  }
-}
