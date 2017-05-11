@@ -129,6 +129,7 @@ header {
   color: #fff;
   border: none;
   font-size: 14px;
+  outline: none;
   font-family: Montserrat-Bold;
   width: auto;
   padding-left: 20px;
