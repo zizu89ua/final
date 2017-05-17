@@ -6,15 +6,19 @@ var gulp = require('gulp'),
 	imagemin = require('gulp-imagemin');
  
 gulp.task('concatCss', function () {
-  return gulp.src(['!src/css/ie.css', '!src/css/fonts.css', 'src/css/**/*.css'])
+  return gulp.src([
+  	'!src/css/ie.css', 
+  	'!src/css/fonts.css', 
+  	'src/css/**/*.css'])
     .pipe(concatCss("main.css"))
     .pipe(gulp.dest('build/css'));
 });
 
  gulp.task('concat', function () {
 	 return gulp.src([
-		 'src/js/script.js',
-		 'src/js/search-img.js'
+		 '!src/js/app.js',
+		 '!src/js/scropt.masonry.js',
+		 'src/js/**/*.js'
 	 ])
 		 .pipe(concat('main.script.min.js'))
          .pipe(uglify())
@@ -29,7 +33,10 @@ gulp.task('imagemin', function() {
 );
 
 gulp.task('sass', function(){
-	return gulp.src(['src/sass/**/*.sass', 'src/sass/**/*scss'])
+	return gulp.src([
+		'src/sass/**/*.sass', 
+		'src/sass/**/*scss'
+		])
 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 		.pipe(gulp.dest('src/css'))
 });
