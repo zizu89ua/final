@@ -1,4 +1,4 @@
-/*@font-face {
+@font-face {
   font-family: Roboto-light;
   font-style: normal;
   font-weight: 300;
@@ -18,7 +18,7 @@
   font-weight: normal;
   src: local("Montserrat-Regular"), local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.woff2) format("woff2"), url(../fonts/Montserrat-Regular.woff);
 }
-*/
+
 @media screen and (max-width: 767px) {
   header {
     background-image: url(../img/320/header-img.jpg);
@@ -61,7 +61,6 @@
     padding-bottom: 14px;
   }
   .first-step, .second-step, .third-step {
-    background-image: url(../img/320/step-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Montserrat-Bold;
@@ -82,6 +81,12 @@
     display: block;
     margin-bottom: 20px;
   }
+  .slider-button-left, .slider-button-right {
+    top: 10px;
+  }
+  .step-image {
+    top: 0;
+  }
   .first-step__title {
     margin-bottom: 20px;
   }
@@ -91,13 +96,9 @@
     color: #96928e;
   }
   .second-step {
-    background-image: url(../img/320/step-2.jpg);
     padding-top: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-  .third-step {
-    background-image: url(../img/320/step-3.jpg);
   }
   .holiday-cattegory {
     width: 94%;
