@@ -47,7 +47,6 @@
 		padding-bottom: 14px;
 	}
 	.first-step{
-		background-image: url(../img/320/step-1.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		font-family: $main-font;
@@ -72,6 +71,16 @@
 		display: block;
 		margin-bottom: 20px;
 	}
+	.slider-button-left{
+		top: 10px;
+	}
+	.slider-button-right{
+		@extend .slider-button-left
+	}
+	.step-image{
+		top: 0;
+	}
+
 	.first-step__title{
 		margin-bottom: 20px;
 	}
@@ -83,7 +92,6 @@
 	}
 	.second-step{
 		@extend .first-step;
-		background-image: url(../img/320/step-2.jpg);
 		padding-top: 100px;
 		margin:{
 			top: 10px;
@@ -94,7 +102,6 @@
 
 	.third-step{
 		@extend .first-step;
-		background-image: url(../img/320/step-3.jpg);
 	}
 	
 	

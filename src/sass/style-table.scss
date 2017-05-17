@@ -1,4 +1,4 @@
-@import "style.css";
+
 @import "fonts.scss";
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -71,9 +71,9 @@
 	margin-top: 260px;
 }
 .first-step{
-	height: 400px;
 	width: 33%;
 	padding-left: 21px;
+	padding-right: 21px;
 }
 .first-step__title{
 	padding-bottom: 20px;
@@ -86,14 +86,12 @@
 }
 .second-step{
 		@extend .first-step;
-		background-image: url(../img/320/step-2.jpg);
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
 
 }
 .third-step{
 		@extend .first-step;
-		background-image: url(../img/320/step-3.jpg);
 }
 .grid-block{
 	width: 75%;
@@ -110,7 +108,7 @@
 	
 }
 .partners-block{
-	width: 50%;
+	width: 60%;
 }
 .partners-block__title{
 	padding-bottom: 20px;

@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: Roboto-light;
   font-style: normal;
   font-weight: 300;
@@ -18,7 +18,7 @@
   font-weight: normal;
   src: local("Montserrat-Regular"), local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.woff2) format("woff2"), url(../fonts/Montserrat-Regular.woff);
 }
-
+*/
 @media screen and (min-width: 1024px) {
   header {
     background-image: url(../img/desktop/header-img.jpg);
@@ -83,16 +83,20 @@
     margin-top: 225px;
   }
   .first-step, .second-step, .third-step {
+    height: 400px;
     width: 20%;
     padding-left: 21px;
-    padding-right: 21px;
   }
   .first-step__title, .second-step__title, .third-step__title {
     padding-bottom: 20px;
   }
   .second-step {
+    background-image: url(../img/320/step-2.jpg);
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .third-step {
+    background-image: url(../img/320/step-3.jpg);
   }
   .holiday-cattegory {
     padding-bottom: 120px;

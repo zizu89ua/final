@@ -15,13 +15,13 @@ a{
 	
 }
 .grid__box:nth-child(6){
-	width: 64%;
+	width: 63%;
 	.grid__item{
 		width: 100%;
 	}
 }
 .grid__box:nth-child(7){
-	width: 64%;
+	width: 63%;
 	.grid__item{
 		width: 100%;
 	}
@@ -121,19 +121,28 @@ header{
 .slider{
 	position: relative;
 }
-.slider-button-left{
-	position: absolute;
-	top: 100px;
+.slider-button-left {
+  position: absolute;
+  top: 100px;
+  background-image: url(../img/array-left.png);
+  height: 55px;
+  width: 30px;
 }
-.slider-button-right{
-	position:absolute
+
+.slider-button-right {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-image: url(../img/array-right.png);
+  height: 55px;
+  width: 30px;
 }
+
 .first-step__title{
 		font-size: 24px;
 	
 	}
 .first-step{
-		background-image: url(../img/320/step-1.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		font-family: $main-font;
@@ -149,6 +158,19 @@ header{
 		letter-spacing: 2px;
 		
 	}
+
+.step-image{
+	z-index: -5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.showing {
+    opacity: 1;
+    z-index: -1;
+}
 .first-step__title{
 		font-size: 24px;
 		
@@ -275,7 +297,8 @@ input::-webkit-input-placeholder {
 		font-family: $main-font;
 		text-align: center;
 		margin-bottom: 10px;
-		border: 1px solid;
+		border: 1px solid #ccc;
+		border-radius: 5px;
 		outline: none;
 	}
 

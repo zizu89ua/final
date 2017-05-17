@@ -65,7 +65,6 @@ header{
     padding-bottom: 8px;
     padding-left: 13px;
     padding-right: 13px;
-    
     position: relative;
 }
   .center-block {
@@ -73,7 +72,7 @@ header{
     padding-top: 138px;
     width: 48%;
     margin: 0 auto;
-    line-height: 60px;
+    
   }
   .center-block__midel-title {
     font-size: 52px;
@@ -95,15 +94,17 @@ header{
   }
   .second-block__wrap {
     padding-top: 36px;
+    margin-left: 10%;
+
+  }
+  .second-block__title{
+      font-family: Montserrat-Bold;
   }
     .step {
     display: block;
     margin-bottom: 20px;
     width: 47px;
     margin-top: 213px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 16px;
     padding-right: 7px;
     border-radius: 10px;
     padding-top: 5px;
@@ -113,17 +114,53 @@ header{
     position: relative;
   }
   .step-central {
-    margin-top: 260px;
+    margin-top: 233px;
   }
   .first-step, .second-step, .third-step {
-    height: 400px;
-    width: 20%;
+    height: 405px;
+    width: 25%;
     padding-left: 21px;
+    padding-right: 21px;
     float: left;
     behavior: url(pie/pie.htc);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/320/step-1.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/320/step-1.jpg', sizingMethod='scale')";
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/320/step-1.jpg', sizingMethod='scale');
+
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='img/320/step-1.jpg', sizingMethod='scale')";
+  }
+  .second-step{
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/320/step-2.jpg', sizingMethod='scale');
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='img/320/step-2.jpg', sizingMethod='scale')";
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .third-step{
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/320/step-3.jpg', sizingMethod='scale');
+
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='img/320/step-3.jpg', sizingMethod='scale')";
+  }
+  .partners-block{
+      clear: both;
+      padding-top: 30px;
+      width: 70%;
+      margin: 0 auto;
+  }
+  .partner-info{
+      display: inline-block;
+      float: left;
+      padding-right: 10px;
+  }
+  .holiday-cattegory__search-title {
+  font-family: Roboto-light;
+  font-size: 18px;
+  color: #696969;
+  display: block;
+  text-align: center;
+  margin-bottom: 17px;
+}
+  .partners-block__button{
+    clear: both;
   }

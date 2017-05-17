@@ -59,7 +59,7 @@
 		display: block;;
 		margin-bottom: 20px;;
 		width: 47px;;
-		margin-top: 213px;
+		margin-top: 180px;
 		padding: {
 			top: 5px;
 			bottom: 5px;
@@ -72,12 +72,12 @@
 		padding-left: 17px;
 	}
 .step-central{
-	margin-top: 260px;
+	margin-top: 225px;
 }
 .first-step{
-	height: 400px;
 	width: 20%;
 	padding-left: 21px;
+	padding-right: 21px;
 }
 .first-step__title{
 	padding-bottom: 20px;
@@ -90,14 +90,12 @@
 }
 .second-step{
 	@extend .first-step;
-	background-image: url(../img/320/step-2.jpg);
 	margin-left: 20px;
 	margin-right: 20px;
 
 }
 .third-step{
 	@extend .first-step;
-	background-image: url(../img/320/step-3.jpg);
 }
 .holiday-cattegory{
 	padding-bottom: 120px;
@@ -151,5 +149,11 @@ footer{
 	margin: 0 auto;
 	display: inline-flex;
     justify-content: space-around;
+}
+.footer__list{
+	margin-top: 0;
+}
+.designed-by{
+	margin-top: 20px;
 }
 }

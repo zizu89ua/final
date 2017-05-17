@@ -3,25 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style-table.css">
 	<link rel="stylesheet" type="text/css" href="css/desktop.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	
+	<!--[if lte IE 9]>
+		<script type="text/javascript" src="pie/PIE_IE678.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/masonry.pkgd.v3.min.js"></script>
+		<script type="text/javascript" src="js/scropt.masonry.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/ie.css">
+     	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+     	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <![endif]-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/search-img.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/jquery.myplug.js"></script>
-
-	<!--[if lte IE 8]>
-	 <link rel="stylesheet" type="text/css" href="css/ie.css">
-     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<script type="text/javascript" src="pie/PIE_IE678.js"></script>
-      
-    <![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>final</title>
 </head>
@@ -46,22 +49,31 @@
 			<h1 class="second-block__title">How Urlaubsglück works?</h1>
 			<div class="second-block__wrap ">
 					<div class="first-step for-slider">
-						<img src="img/array-left.png" class="slider-button-left" id="button">
-						<img src="img/array-right.png" class="slider-button-right" id="button">
+						<img src="img/step-1.jpg" class="step-image showing">
+						<img src="img/step-2.jpg" class="step-image">
+						<img src="img/step-3.jpg" class="step-image">
+						<span class="slider-button-left"></span>
+						<span class="slider-button-right" ></span>
 						<span class="step">step 1</span>
 						<h2 class="first-step__title">Sed leo enim, condimentum</h2>
 						<p class="first-step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
 					</div>
 					<div class="second-step for-slider">
-						<img src="img/array-left.png" class="slider-button-left">
-						<img src="img/array-right.png" class="slider-button-right">
+						<img src="img/step-1.jpg" class="step-image">
+						<img src="img/step-2.jpg" class="step-image showing">
+						<img src="img/step-3.jpg" class="step-image">
+						<span class="slider-button-left"></span>
+						<span class="slider-button-right"></span>
 						<span class="step step-central">step 2</span>
 						<h2 class="second-step__title">Morbi velit risus</h2>
 						<p class="second-step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
 					</div>
 					<div class="third-step for-slider">
-						<img src="img/array-left.png" class="slider-button-left">
-						<img src="img/array-right.png" class="slider-button-right">
+						<img src="img/step-1.jpg" class="step-image">
+						<img src="img/step-2.jpg" class="step-image">
+						<img src="img/step-3.jpg" class="step-image showing">
+						<span class="slider-button-left"></span>
+						<span class="slider-button-right"></span>
 						<span class="step">step 3</span>
 						<h2 class="third-step__title">Sed leo enim, condimentum</h2>
 						<p class="third-step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
@@ -109,12 +121,18 @@
 			<div class="grid-block" id="grid">
 				<div class="gutter-width"></div>
 			</div>
+
+			
+
 			<h3 class="holiday-cattegory__title">Discover holiday activity ideas</h3>
 			<span class="holiday-cattegory__search-title">Hi! What are your holiday interests?</span>
 			<form class="holiday-cattegory__search-form">
 				<input type="text" name="" placeholder="Enter your interests" class="holiday-cattegory__search-block" value="">
 				<button  class="holiday-cattegory__search-button" name="">Search partners</button>
 			</form>
+			<!--[if lte IE 9]>
+		<script type="text/javascript" src="js/scropt.masonry.js"></script>
+    <![endif]-->
 		</div>
 		<footer>
 			<div class="footer__wrap">
@@ -134,6 +152,10 @@
 				</div>
 			</div>
 		</footer>
+		<!-- <script type="text/javascript">var pixabayWidget = { 'key': '5276352-5eeec9953d725415cb7dab763' }</script>
+			<script src="https://goodies.pixabay.com/javascript/pixabay-widget/pixabay-widget.min.js" async defer></script>
+
+			<div class="pixabay_widget" data-search="dog" data-per-page="7" data-prev=' ' data-next=' '></div> -->
 	</div>
 </body>
 </html>
